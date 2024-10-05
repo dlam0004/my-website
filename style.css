@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif; /* Use Arial font */
@@ -15,19 +20,29 @@ h1, h2, h3, p {
 /* Header */
 .header {
     background-color: #FF5722; /* Matches page background */
-    padding: 20px;
+    padding: 10px; /* when you change this change padding-top*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /*space-between*/
     position: fixed; /* Makes the header stay fixed at the top */
     top: 0;
-    width: 98%; /* Ensures the header takes up the full width */
+    width: 99%; /* Ensures the header takes up the full width */
     z-index: 1000; /* Makes sure the header stays above other elements */
 }
 
+/* Move the nav items slightly away from the right edge */
+.header nav {
+    margin-right: 50px; /* Adjusted margin to control distance from the right */
+}
+
+.header nav a {
+    margin-left: 20px; /* Keeps spacing between the "About" and "Guidelines" links */
+    text-decoration: none;
+    color: white;
+}
 /* Add some padding to the body to prevent content from being hidden under the fixed header */
 body {
-    padding-top: 80px; /* Adjust this value based on the height of your header */
+    padding-top: 40px; /*  80px Adjust this value based on the height of your header */
 }
 
 
@@ -53,6 +68,9 @@ body {
     text-transform: uppercase;
 }*/
 .title {
+    /*font-family:'Chewy', sans-serif;*/
+    font-family:'Fredoka One', sans-serif;
+    /*font-family:'Varela Round', sans-serif;*/
     font-size: 3rem; /* Larger size for emphasis, originally was 4 */
     font-weight: 700; /* Bold weight */
     color: white; /* White text color */
