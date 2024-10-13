@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    margin: 0;
+    padding: 0;
+    background-color: #FF5722; /* Orange background */
+    color: white;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+
+/* Header */
+.header {
+    background-color: #FF5722; /* Matches page background */
+    padding: 10px; /* when you change this change padding-top*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*space-between*/
+    position: fixed; /* Makes the header stay fixed at the top */
+    top: 0;
+    width: 99%; /* Ensures the header takes up the full width */
+    z-index: 1000; /* Makes sure the header stays above other elements */
+}
+
+/* Move the nav items slightly away from the right edge */
+.header nav {
+    margin-right: 50px; /* Adjusted margin to control distance from the right */
+}
+
+.header nav a {
+    margin-left: 20px; /* Keeps spacing between the "About" and "Guidelines" links */
+    text-decoration: none;
+    color: white;
+}
+/* Add some padding to the body to prevent content from being hidden under the fixed header */
+body {
+    padding-top: 40px; /*  80px Adjust this value based on the height of your header */
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Rounded logo */
+    margin-right: 15px;
+}
+/*
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}*/
+.title {
+    /*font-family:'Chewy', sans-serif;*/
+    font-family:'Fredoka One', sans-serif;
+    /*font-family:'Varela Round', sans-serif;*/
+    font-size: 3rem; /* Larger size for emphasis, originally was 4 */
+    font-weight: 700; /* Bold weight */
+    color: white; /* White text color */
+    background-color: #FF5722; /* Orange background */
+    padding: 10px 20px; /* Add some padding for breathing room */
+    border-radius: 8px; /* Rounded edges */
+    text-transform: uppercase; /* Uppercase styling */
+    display: inline-block; /* Ensure padding around the text */
+    
+    /* Text Stroke (Outline) */
+    -webkit-text-stroke: 2px black; /* Black outline around the text */
+    text-stroke: 2px black; /* Fallback for browsers that support it */
+    
+    /* Text Shadow to enhance the depth of the outline */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+/* STYLES for bullets, paragraphs */
+ul {
+    list-style-type: disc; /* Ensure standard bullet points are shown */
+    margin-left: 20px;     /* Indent the bullet points from the left */
+    padding-left: 20px;    /* Ensure space between the bullet points and the text */
+}
+
+li {
+    color: black;          /* Set the text color to black */
+    margin-bottom: 10px;   /* Add space between each bullet point item */
+}
+
+
+p {
+    margin-bottom: 20px; /* Adjust this value as per your requirement */
+}
+
+/* IMAGES edges*/
+.rounded-image {
+    border-radius: 35px; /* Adjust this value for more or less rounding */
+    overflow: hidden; /* Ensures that the image stays within the rounded edges */
+}
+
+/* Tagline Section */
+.tagline-section {
+    background-color: #000; /* Black background for the overall section */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Grey container with rounded edges */
+.tagline-container {
+    background-color: #4A4A4A; /* Nice grey background */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 15px; /* Rounded edges */
+    display: inline-block; /* Ensures the container is sized to fit content */
+}
+
+/* Styling for Possibilities section */
+.possibilities-title {
+    color: #FF5722; /* Orange color for the title */
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px; /* 20px*/
+}
+
+.possibilities-section {
+    background-color: #000; /* Black background for the section */
+    padding: 40px 20px;
+}
+
+.possibilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 20px; /* Space between items */
+    text-align: center;
+}
+
+.possibilities-grid div {
+    font-size: 1.2rem;
+    color: white; /* White text for possibilities */
+}
+
+
+
+/* Features Section */
+.features-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features-section h2 {
+    font-size: 2rem; /* Ensure consistency with other titles */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.features-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two boxes per row by default (tablet size) */
+    gap: 20px;
+}
+
+.feature-box {
+    background-color: #000; /* Black background for the boxes */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 15px; /* Rounded edges */
+    text-align: center;
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Power Up Your Profile Section */
+.profile-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.profile-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three boxes per row by default */
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: #000; /* Black background for the boxes */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 15px; /* Rounded edges */
+    text-align: center;
+}
+
+.profile-card h3 {
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.profile-image {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 15px; /* Rounded edges for the image */
+}
+
+
+/* Footer Section */
+/* Footer Styling */
+.footer-section {
+    background-color: #FF5722;
+    color: black;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    width: 70px;
+    margin-top: 2px;
+}
+
+.footer-contact,
+.footer-navigation,
+.footer-social {
+    flex: 1;
+}
+
+.footer-contact h3,
+.footer-navigation h3,
+.footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-navigation ul,
+.footer-social ul {
+    margin: 5px 0;
+}
+
+.footer-navigation ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-navigation ul li,
+.footer-social ul li {
+    margin-bottom: 5px;
+}
+
+.footer-navigation ul li a,
+.footer-social ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 0%; /* 10px */
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-bottom p {
+    margin-top: 10px;
+}
+
+/* About Page Section */
+.mission-section {
+    padding-top: 70px;
+    background-color: #FF5722; /* Orange background */
+    text-align: left;
+    padding-left: 40px;
+}
+
+.about-section {
+    background-color: #FF5722; /* Orange background */
+    padding:  40px 20px;
+    text-align: center;
+}
+
+.about-container {
+    background-color: white; /* White box/container */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-container h2 {
+    color: black; /* Black title text */
+    font-size: 2rem; /* Larger font for titles */
+    margin-bottom: 10px;
+}
+
+.about-container p {
+    color: black; /* Black paragraph text */
+    font-size: 1rem; /* Normal font size for text */
+    line-height: 1.5;
+}
+/* GUIDELINES Page Section */
+.guidelines-section {
+    background-color: #FF5722; /* Orange background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Title: Safety and Privacy */
+.title-container {
+    background-color: #4A4A4A; /* Grey background */
+    color: white; /* White text */
+    padding: 10px 30px;
+    display: inline-block; /* Wraps closely around the text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 0 auto 20px auto; /* Centers the box and adds margin */
+}
+
+.title-container h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* White containers for the sections */
+.guidelines-container {
+    background-color: white; /* White background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align text to the left */
+    max-width: 95%; /* Set a max-width to prevent overflow */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+}
+
+
+/* Centered titles for each section */
+.guidelines-container h3 {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.guidelines-container p {
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Remove side-by-side layout */
+.guidelines-grid {
+    display: block; /* Make sure it's full width */
+    gap: 20px;
+}
+
+.guidelines-grid .guidelines-container {
+    width: 100%; /* Ensure full-width for the containers */
+}
+
+/* END of guidelines */
+
+
+/* Responsive Design */
+
+/* Large screens (desktops/laptops) */
+@media (min-width: 1024px) {
+    .features-boxes, .profile-box {
+        grid-template-columns: repeat(3, 1fr); /* Three boxes per row on desktop */
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .features-boxes, .profile-box {
+        grid-template-columns: 1fr; /* One box per row on mobile */
+    }
+
+    .feature-box, .profile-card {
+        width: 100%; /* Ensure the box takes the full width */
+    }
+}
