@@ -6,90 +6,117 @@
 
 /* General Styling */
 body {
-    font-family: 'Arial', sans-serif; /* Use Arial font */
+    font-family: 'Georgia', sans-serif;
+    /* Use Arial font */
     margin: 0;
     padding: 0;
-    background-color: #FF5722; /* Orange background */
+    background-color: #fff;
+    /*#224C7C:*/
+    /* Orange background */
     color: white;
     width: 100%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
 }
 
 
-/* Header */
+/* Header TOP*/
 .header {
-    background-color: #FF5722; /* Matches page background */
-    padding: 10px; /* when you change this change padding-top*/
+    background-color: #fff;
+    /*#224C7C;*/
+    /* Matches page background */
+    padding: 6px;
+    /* when you change this change padding-top*/
     display: flex;
     align-items: center;
-    justify-content: space-between; /*space-between*/
-    position: fixed; /* Makes the header stay fixed at the top */
+    justify-content: space-between;
+    /*space-between*/
+    position: fixed;
+    /* Makes the header stay fixed at the top */
     top: 0;
     /*box-sizing:border-box;*/
     margin: 0 auto;
-    width: 99%; /* Ensures the header takes up the full width */
-    z-index: 1000; /* Makes sure the header stays above other elements */
+    width: 99.9%;
+    /* Ensures the header takes up the full width */
+    z-index: 1000;
+    /* Makes sure the header stays above other elements */
 }
+
 
 /* Move the nav items slightly away from the right edge */
 .header nav {
-    margin-right: 50px; /* Adjusted margin to control distance from the right */
+    margin-right: 40px;
+    /* Adjusted margin to control distance from the right */
 }
 
 .header nav a {
-    margin-left: 20px; /* Keeps spacing between the "About" and "Guidelines" links */
+    margin-left: 2px;
+    /* Keeps spacing between the "About" and "Home" links */
     text-decoration: none;
-    color: white;
+    color: black;
 }
+
 /* Add some padding to the body to prevent content from being hidden under the fixed header */
 body {
-    padding-top: 40px; /*  80px Adjust this value based on the height of your header */
+    padding-top: 15px;
+
 }
 
-
+/*logo at the top in the header*/
 .logo-container {
     display: flex;
     align-items: center;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
-    background-color: #000;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    /*#000*/
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Rounded logo */
+    border-radius: 50%;
+    /* Rounded logo */
     margin-right: 15px;
 }
-/*
-.title {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}*/
+
+
 .title {
     /*font-family:'Chewy', sans-serif;*/
-    font-family:'Fredoka One', sans-serif;
+    font-family: 'Fredoka One', sans-serif;
     /*font-family:'Varela Round', sans-serif;*/
-    font-size: 3rem; /* Larger size for emphasis, originally was 4 */
-    font-weight: 700; /* Bold weight */
-    color: white; /* White text color */
-    background-color: #FF5722; /* Orange background */
-    padding: 10px 20px; /* Add some padding for breathing room */
-    border-radius: 8px; /* Rounded edges */
-    text-transform: uppercase; /* Uppercase styling */
-    display: inline-block; /* Ensure padding around the text */
-    
+    font-size: 1.7rem;
+    /* Larger size for emphasis, originally was 4 */
+    font-weight: 500;
+    /* Bold weight */
+    color: white;
+    /* White text color */
+    background-color: #fff;
+    /*#224C7C;*/
+    /* Orange background */
+    padding: 6px 10px;
+    /* Add some padding for breathing room */
+    border-radius: 8px;
+    /* Rounded edges */
+
+    /* Uppercase styling */
+    display: inline-block;
+    /* Ensure padding around the text */
+
     /* Text Stroke (Outline) */
-    -webkit-text-stroke: 2px black; /* Black outline around the text */
+    -webkit-text-stroke: 2px black;
+    /* Black outline around the text */
     /*text-stroke: 2px black; /* Fallback for browsers that support it */
-    
+
     /* Text Shadow to enhance the depth of the outline */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -97,171 +124,279 @@ body {
 
 .nav {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .nav a {
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav a:hover {
     text-decoration: underline;
 }
+
 /* STYLES for bullets, paragraphs */
 ul {
-    list-style-type: disc; /* Ensure standard bullet points are shown */
-    margin-left: 20px;     /* Indent the bullet points from the left */
-    padding-left: 20px;    /* Ensure space between the bullet points and the text */
+    list-style-type: disc;
+    /* Ensure standard bullet points are shown */
+    margin-left: 20px;
+    /* Indent the bullet points from the left */
+    padding-left: 20px;
+    /* Ensure space between the bullet points and the text */
 }
 
 li {
-    color: black;          /* Set the text color to black */
-    margin-bottom: 10px;   /* Add space between each bullet point item */
+    color: black;
+    /* Set the text color to black */
+    margin-bottom: 10px;
+    /* Add space between each bullet point item */
 }
 
 
 p {
-    margin-bottom: 20px; /* Adjust this value as per your requirement */
+    margin-bottom: 20px;
+    /* Adjust this value as per your requirement */
 }
 
 /* IMAGES edges*/
 .rounded-image {
-    border-radius: 35px; /* Adjust this value for more or less rounding */
-    overflow: hidden; /* Ensures that the image stays within the rounded edges */
+    border-radius: 35px;
+    /* Adjust this value for more or less rounding */
+    overflow: hidden;
+    /* Ensures that the image stays within the rounded edges */
 }
 
-/* Tagline Section */
-.tagline-section {
-    background-color: #000; /* Black background for the overall section */
-    padding: 40px 20px;
-    text-align: center;
-    box-sizing: border-box;
+/* Book Intro Section with two-column layout */
+.book-intro-section {
+    background-color: #224C7C;
+    /*#000;*/
+    padding: 60px 20px 15px 20px;
+    /* top right bottom left */
 }
 
-/* Grey container with rounded edges */
-.tagline-container {
-    background-color: #4A4A4A; /* Nice grey background */
-    color: white; /* White text */
-    padding: 20px;
-    border-radius: 15px; /* Rounded edges */
-    display: inline-block; /* Ensures the container is sized to fit content */
+.book-intro-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    font-family: 'Georgia', serif;
+    /* stack on smaller screens */
 }
 
-/* Styling for Possibilities section */
-.possibilities-title {
-    color: #FF5722; /* Orange color for the title */
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 5px; /* 20px*/
+/* Left Side - Text */
+.book-text {
+    flex: 1;
+    min-width: 280px;
 }
 
-.possibilities-section {
-    background-color: #000; /* Black background for the section */
-    padding: 40px 20px;
+.book-title {
+    color: #f2cf0b;
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
 }
 
-.possibilities-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
-    gap: 20px; /* Space between items */
-    text-align: center;
-}
-
-.possibilities-grid div {
+.book-subtitle {
+    color: #efcc09;
     font-size: 1.2rem;
-    color: white; /* White text for possibilities */
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: capitalize;
+    max-width: 500px;
+    font-family: 'Georgia', serif;
 }
 
-
-
-/* Features Section */
-.features-section {
-    text-align: center;
-    padding: 40px 20px;
-    box-sizing: border-box;
-}
-
-.features-section h2 {
-    font-size: 2rem; /* Ensure consistency with other titles */
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.features-boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two boxes per row by default (tablet size) */
-    gap: 20px;
-}
-
-.feature-box {
-    background-color: #000; /* Black background for the boxes */
-    color: white; /* White text */
-    padding: 20px;
-    border-radius: 15px; /* Rounded edges */
+/* Right Side - Book Image */
+.book-image {
+    flex: 1;
+    min-width: 260px;
     text-align: center;
 }
 
-.feature-box h3 {
-    margin-bottom: 10px;
-}
-
-.feature-box p {
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-/* Power Up Your Profile Section */
-.profile-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.profile-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.profile-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three boxes per row by default */
-    gap: 20px;
-}
-
-.profile-card {
-    background-color: #000; /* Black background for the boxes */
-    color: white; /* White text */
-    padding: 20px;
-    border-radius: 15px; /* Rounded edges */
-    text-align: center;
-}
-
-.profile-card h3 {
-    margin-bottom: 10px;
-}
-
-.profile-card p {
-    margin-top: 10px;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.profile-image {
-    margin-top: 20px;
+.book-image img {
     width: 100%;
-    border-radius: 15px; /* Rounded edges for the image */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+    /*  center image horizontally */
+    display: block;
+    /* needed for margin auto */
+    box-shadow: 0 0 60px rgba(247, 210, 2, 0.8);
+
+}
+
+.quote {
+    border-left: 4px solid #FFD700;
+    padding-left: 15px;
+    font-style: italic;
+    color: #FFD700;
+    /*#FFD700;*/
+    font-family: 'Georgia', serif;
+    margin: 20px 0;
 }
 
 
-/* Footer Section */
-/* Footer Styling */
-.footer-section {
-    background-color: #FF5722;
-    color: black;
+/* ===
+Responsive Layout
+   ===*/
+@media (max-width: 768px) {
+    .book-intro-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .book-text,
+    .book-image {
+        margin: 0;
+    }
+
+    .book-subtitle {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .book-title {
+        font-size: 2.2rem;
+    }
+
+    .book-subtitle {
+        font-size: 1rem;
+    }
+
+    .book-image img {
+        max-width: 220px;
+        /* Slightly smaller on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .book-image {
+        margin-left: 40px;
+        /* Reset on small screens */
+        transform: none;
+    }
+}
+
+/* PAGES SECTION STYLING */
+
+.pages-progress-section {
     padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 800px;
+    font-family: Georgia, serif;
+}
+
+.pages-progress-content {
+    display: flex;
+    gap: 40px;
+    /* Space between text and image */
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+    /* ✅ Allows stacking on small screens */
+}
+
+/* LEFT SIDE TEXT */
+.progress-text {
+    color: gold;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 40px;
+    /* ✅ Pushes text right on wide screens */
+}
+
+/* Lines inside the text */
+.progress-text p {
+    margin: 0;
+}
+
+/* RIGHT SIDE IMAGE */
+.progress-image img {
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
+    /*Pushes image further right */
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(247, 210, 2, 0.5);
+    /* Gold glow */
+    filter: contrast(1.2) saturate(1.4);
+
+}
+
+/* MEDIA QUERY: Responsive behavior for tablets and phones */
+@media (max-width: 768px) {
+    .pages-progress-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .progress-text {
+        margin-left: 0;
+
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+
+}
+
+/*GET COPY*/
+.get-copy-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.get-copy-button {
+    display: inline-block;
+    background-color: #FFD700;
+    color: Black;
+    /* White text */
+    font-family: Georgia, serif;
+    /* Georgia font */
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.get-copy-button:hover {
+    background-color: #0056b3;
+
+}
+
+
+/* Footer Section start */
+
+.footer-section {
+    background-color: #224C7C;
+    /* #224C7C;*/
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Georgia', sans-serif;
     box-sizing: border-box;
 }
 
@@ -283,7 +418,7 @@ p {
 }
 
 .footer-logo a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -291,10 +426,14 @@ p {
     width: 70px;
     margin-top: 2px;
 }
+
 img {
-    max-width: 100%; /* Images resize to fit their container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Images resize to fit their container */
+    height: auto;
+    /* Maintain aspect ratio */
 }
+
 
 .footer-contact,
 .footer-navigation,
@@ -315,10 +454,17 @@ img {
     margin: 5px 0;
 }
 
-.footer-navigation ul,
-.footer-social ul {
+.footer-navigation ul {
     list-style-type: none;
     padding: 0;
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 10px 0 0 0;
 }
 
 .footer-navigation ul li,
@@ -328,7 +474,7 @@ img {
 
 .footer-navigation ul li a,
 .footer-social ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -336,7 +482,8 @@ img {
     border-top: 1px solid black;
     padding-top: 10px;
     text-align: center;
-    margin-top: 0%; /* 10px */
+    margin-top: 0%;
+    /* 10px */
 }
 
 .footer-bottom ul {
@@ -357,125 +504,46 @@ img {
     margin-top: 10px;
 }
 
-/* About Page Section */
-.mission-section {
-    padding-top: 70px;
-    background-color: #FF5722; /* Orange background */
-    text-align: left;
-    padding-left: 40px;
+/* social media links*/
+.footer-social a.instagram {
+    color: #C13584;
+    /* Instagram pink (almost purple) */
 }
 
-.about-section {
-    background-color: #FF5722; /* Orange background */
-    padding:  40px 20px;
-    text-align: center;
+.footer-social a.facebook {
+    color: #1877F2;
+    /* Facebook blue */
 }
 
-.about-container {
-    background-color: white; /* White box/container */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+.footer-social a.linkedin {
+    color: white;
+    /* LinkedIn white */
 }
 
-.about-container h2 {
-    color: black; /* Black title text */
-    font-size: 2rem; /* Larger font for titles */
-    margin-bottom: 10px;
+.footer-social a.instagram:hover {
+    color: #e137f7;
+    /* Instagram orange-pink gradient effect */
 }
 
-.about-container p {
-    color: black; /* Black paragraph text */
-    font-size: 1rem; /* Normal font size for text */
-    line-height: 1.5;
-}
-/* GUIDELINES Page Section */
-.guidelines-section {
-    background-color: #FF5722; /* Orange background */
-    padding: 40px 20px;
-    text-align: center;
+.footer-social a.facebook:hover {
+    color: #6190ed;
+    /* Darker Facebook blue */
 }
 
-/* Title: Safety and Privacy */
-.title-container {
-    background-color: #4A4A4A; /* Grey background */
-    color: white; /* White text */
-    padding: 10px 30px;
-    display: inline-block; /* Wraps closely around the text */
-    border-radius: 10px; /* Rounded corners */
-    margin: 0 auto 20px auto; /* Centers the box and adds margin */
-}
-
-.title-container h2 {
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-/* White containers for the sections */
-.guidelines-container {
-    background-color: white; /* White background */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    text-align: left; /* Align text to the left */
-    max-width: 95%; /* Set a max-width to prevent overflow */
-    margin-left: auto; /* Center the container */
-    margin-right: auto; /* Center the container */
+.footer-social a.linkedin:hover {
+    color: #9d8585;
+    /* Light grey for LinkedIn */
 }
 
 
-/* Centered titles for each section */
-.guidelines-container h3 {
-    color: black;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.guidelines-container p {
-    color: black;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Remove side-by-side layout */
-.guidelines-grid {
-    display: block; /* Make sure it's full width */
-    gap: 20px;
-}
-
-.guidelines-grid .guidelines-container {
-    width: 100%; /* Ensure full-width for the containers */
-}
-
-/* END of guidelines */
-
+/*footer end*/
 
 /* Responsive Design */
 
-/* Large screens (desktops/laptops) */
-@media (min-width: 1024px) {
-    .features-boxes, .profile-box {
-        grid-template-columns: repeat(3, 1fr); /* Three boxes per row on desktop */
-    }
-}
-
-/* Small screens (mobile) */
-@media (max-width: 768px) {
-    .features-boxes, .profile-box {
-        grid-template-columns: 1fr; /* One box per row on mobile */
-    }
-
-    .feature-box, .profile-card {
-        width: 100%; /* Ensure the box takes the full width */
-        box-sizing: border-box;
-    }
-}
 /* Hamburger Menu */
 .hamburger-menu {
-    display: none; /* Hidden on desktop */
+    display: none;
+    /* Hidden on desktop */
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
@@ -485,29 +553,55 @@ img {
 .hamburger-menu span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #224C7C;
     border-radius: 2px;
 }
-/* keyframes */
-/* Add this to your CSS */
 
+.buy-button {
+    display: inline-block;
+    padding: 8px 15px;
+    /*12px 20px;*/
+    background-color: #FFD700;
+    /*#FFD700;*/
+    /*gold*/
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
 
 /* Keyframes for swimming animation */
 @keyframes swim {
     0% {
-        transform: translateY(0) translateX(0); /* Start position */
+        transform: translateY(0) translateX(0);
+        /* Start position */
     }
+
     25% {
-        transform: translateY(-10px) translateX(5px); /* Move up and right */
+        transform: translateY(-10px) translateX(5px);
+        /* Move up and right */
     }
+
     50% {
-        transform: translateY(0) translateX(10px); /* Return to center */
+        transform: translateY(0) translateX(10px);
+        /* Return to center */
     }
+
     75% {
-        transform: translateY(10px) translateX(5px); /* Move down and left */
+        transform: translateY(10px) translateX(5px);
+        /* Move down and left */
     }
+
     100% {
-        transform: translateY(0) translateX(0); /* End position */
+        transform: translateY(0) translateX(0);
+        /* End position */
     }
 }
 
@@ -528,66 +622,377 @@ img {
 .image-move {
     display: block;
     margin: auto;
-    animation: float 3s ease-in-out infinite; /* Infinite swimming motion */
+    animation: float 3s ease-in-out infinite;
+    /* Infinite swimming motion */
     transition: transform 0.5s;
     will-change: transform;
-    box-shadow:0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transform-origin: center;
 }
+
 .image-move:hover {
-    animation: none; /* Stop animation on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    animation: none;
+    /* Stop animation on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect */
 }
 
-/* social media links*/
-.footer-social a.instagram {
-    color: #C13584; /* Instagram pink (almost purple) */
+/*Hamburger navigation*/
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        /* HERE: Move menu up/down */
+        left: 0;
+        right: 0;
+        background-color: white;
+
+        padding: 2px;
+        /* HERE: Adjust space inside the container (top/right/bottom/left) */
+        gap: 10px;
+        /* HERE: Adjust space between each nav link (smaller = tighter) */
+
+        z-index: 1000;
+        /* Stays above other content */
+    }
+
 }
 
-.footer-social a.facebook {
-    color: #1877F2; /* Facebook blue */
-}
 
-.footer-social a.linkedin {
-    color: white; /* LinkedIn white */
-}
-
-.footer-social a.instagram:hover {
-    color: #e137f7; /* Instagram orange-pink gradient effect */
-}
-
-.footer-social a.facebook:hover {
-    color: #6190ed; /* Darker Facebook blue */
-}
-
-.footer-social a.linkedin:hover {
-    color: #9d8585; /* Light grey for LinkedIn */
-}
-
-
-/* ####################################### */
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
     .nav {
-        display: none; /* Hidden by default on mobile */
+        display: none;
+        /* Hidden by default on mobile */
         flex-direction: column;
         gap: 15px;
-        background-color: #FF5722; /* Match header color */
+        background-color: #224C7C;
+        /* Match header color */
         position: absolute;
-        top: 60px; /* Adjust based on header height */
+        top: 60px;
+        /* Adjust based on header height */
         right: 20px;
         padding: 10px;
         border-radius: 8px;
     }
 
-    .nav.active {
-        display: flex; /* Show navigation when active */
+    /* ==========*/
+    .nav-link {
+        color: white;
+        display: inline-block;
+        background-color: transparent;
+        padding: 12px 15px;
+        /* Slightly more padding */
+        text-decoration: none;
+        border-radius: 8px;
+        /* More rounded corners */
+        transition: all 0.3s ease;
+        vertical-align: middle;
+        font-weight: 500;
+        position: relative;
+        top: 2px;
+    }
+
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        /* Lighter hover background */
+        transform: translateY(-2px);
+        /* Slight lift on hover */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Highlight for active link - CHANGED TO RED BACKGROUND */
+    .nav-link.active {
+        background-color: #e74c3c;
+        /* Bright Red */
+        color: white;
+        /* Text color for better contrast on red */
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(231, 76, 60, 0.7), 0 0 5px rgba(0, 0, 0, 0.2);
+        /* Red glow for shadow */
+        transform: scale(1.05);
+        /* Slightly larger when active */
     }
 
     .hamburger-menu {
-        display: flex; /* Show hamburger menu on mobile */
+        display: flex;
+        /* Show hamburger menu on mobile */
     }
 }
 
+/* === Six Pivotal Themes Section === */
+.themes-section {
+    background-color: #224C7C;
+    /* Deep blue background */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: Georgia, serif;
+}
 
+.themes-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.themes-list {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    letter-spacing: 0.5px;
+}
+
+/* === Theme Grid Section === */
+.theme-grid-section {
+    background-color: #fff;
+    /* Black background */
+    padding: 60px 0px;
+}
+
+.theme-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    /* Responsive 2 columns */
+    gap: 30px;
+    max-width: 100%;
+    /*1200px*/
+    margin: auto;
+    padding: 0 3vw;
+}
+
+.theme-box {
+    background-color: #000;
+    /* Slightly lighter than black for contrast */
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    font-family: Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.theme-box-title {
+    color: gold;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.theme-box-text {
+
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    color: #fff;
+    /* Or gold/white depending on your background */
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 10px 20px;
+    border-left: 4px solid gold;
+    /*
+
+    /*margin-bottom: 15px;*/
+}
+
+.theme-box-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: auto;
+}
+
+graduation-img {
+    width: 100%;
+    /* Make it stretch full width of its container */
+    height: auto;
+    object-fit: cover;
+    /* Ensures image fills area even if cropping is needed */
+    aspect-ratio: 4 / 3;
+    /* Optional: keep shape consistent across layouts */
+    border-radius: 8px;
+    /* Match other image styles */
+}
+
+/* === Responsive adjustment for small screens === */
+@media (max-width: 768px) {
+    .theme-grid-container {
+        grid-template-columns: 1fr;
+        /* Switch to one column */
+        padding: 0 5vw;
+        /* Adjust side padding for small screens */
+    }
+
+    .theme-box {
+        padding: 20px 10px;
+        /* Slightly reduce box padding on small screens */
+    }
+
+    .themes-title {
+        font-size: 2rem;
+    }
+
+    .theme-box-title {
+        font-size: 1.3rem;
+    }
+
+    .theme-box-text {
+        font-size: 1rem;
+    }
+}
+
+/*READ MORE IN ABOUT*/
+.read-more-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.read-more-button {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.read-more-button:hover {
+    background-color: #224C7C;
+    /* darker gold on hover */
+    transform: scale(1.05);
+}
+
+/* === Buy Now Section === */
+.buy-now-section {
+    padding: 60px 20px;
+    background-color: #224C7C;
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #000;
+    border-bottom: 1px solid #fff;
+
+}
+
+.buy-now-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.buy-now-title .black-text {
+    color: black;
+}
+
+.buy-now-title .gold-text {
+    color: gold;
+}
+
+.buy-now-description {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #fff;
+}
+
+.buy-now-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.buy-now-list {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+    text-align: left;
+    flex: 1 1 300px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.buy-now-list li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 32px;
+    line-height: 1.6
+}
+
+.buy-now-list li::before {
+    content: "✔";
+    /* checkmark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #FFD700;
+    /* deep blue checkmark */
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.buy-now-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.buy-now-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(238, 174, 11, 0.8);
+    /* soft gold glow */
+}
+
+.buy-now-button {
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.buy-now-button:hover {
+    background-color: #FFD700;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .buy-now-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buy-now-list {
+        text-align: center;
+        padding-left: 0;
+    }
+}

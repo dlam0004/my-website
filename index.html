@@ -1,20 +1,23 @@
+<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - LIFEHUB</title>
+        <title>Home - Transition Hub</title>
         <link rel="icon" href="rounded.png" type="image/x-icon"> <!-- added favicon -->
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script> <!-- Add this line -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </head>
     
 <body>
     <!-- Navigation Bar -->
     <header class="header">
         <div class="logo-container">
-            <img src="icon11.png" alt="LIFEHUB Logo" class="logo">
-            <h1 class="title">LIFEHUB</h1>
+            <img src="../icon11.png" alt="TransitionHub Logo" class="logo"> <!--MAIN LOGO UP THERE-->
+            <h1 class="title">TransitionHub</h1>
         </div>
         <!-- Hamburger menu for mobile -->
         <div class="hamburger-menu">
@@ -23,191 +26,114 @@
             <span></span>
         </div>
         <nav class="nav">
-            <a href="about.html">About</a>
-            <a href="guidelines.html">Guidelines</a>
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/buy/" class ="nav-link buy-button">Buy Now</a>
         </nav>
     </header>
     
 
+<!-- Book Intro Hero Section -->
+<section class="book-intro-section">
+    <div class="book-intro-content">
+        <div class="book-text">
+            <h2 class="book-title">IN TRANSITION</h2>
+            <p class="book-subtitle">Finding Direction and Moving Forward When Everything Feels Uncertain</p>
 
-    <!-- Tagline Section -->
-    <section class="tagline-section">
-        <div class="tagline-container">
-            <h2>Community, Connection, Empowerment, Growth</h2>
+            <div class="book-message">
+                <p class="theme-line">The voice you believe shapes your transitions — because what you believe becomes the compass that guides your becoming.</p>
+
+                <p class="theme-line">In every corner of life, a transition awaits.<br>Transitions are inevitable.</p>
+
+                <blockquote class="quote">
+                    “Progress is not measured by distance remaining but by ground covered. Every step reduces the total journey.”
+                </blockquote>
+
+                <blockquote class="quote">
+                    “To survive a challenge, you have to increase your capacity to avoid drowning in it.”
+                </blockquote>
+            </div>
         </div>
-    </section>
 
-   <!-- Possibilities Section -->
-<section class="possibilities-section">
-    <h2 class="possibilities-title">Possibilities</h2>
-    <div class="possibilities-grid">
-        <div>Connect</div>
-        <div>Collaborate</div>
-        <div>Network</div>
-        <div>Build Friendships</div>
-        <div>Shared Interests</div>
-        <div>Explore Communities</div>
+        <div class="book-image">
+            <img src="../amaz cover.jpg" alt="IN TRANSITION Book Cover">
+        </div>
     </div>
 </section>
 
+<!-- Pages In Progress Section -->
+<section class="pages-progress-section">
+    <div class="pages-progress-content">
+        <div class="progress-text">
+            <p>BEHIND</p>
+            <p>THE</p>
+            <p>PAGES</p>
+        </div>
+        <div class="progress-image">
+            <img src="best text in home.png" alt="Pages in Progress Illustration">
+        </div>
+    </div>
 
     
-<!-- Features Section -->
-<section class="features-section">
-    <h2>Features</h2> <!-- Title added before the boxes -->
-    <div class="features-boxes">
-        
-        <!-- Chat Feature Box -->
-        <div class="feature-box">
-            <h3>Chat</h3>
-            <p>
-                Stay connected with friends through seamless text, voice, and video calls. 
-                Engage in dynamic, customizable group chats that put you in control of your social interactions.
-            </p>
-            <img src="phicon.png" alt="Chat Feature" class="rounded-image swimming-image"> <!-- Replace with actual image path -->
-        </div>
-        
-        <!-- Posts Feature Box -->
-        <div class="feature-box">
-            <h3>Posts</h3>
-            <p>
-                Stay connected with real-time social interactions and discover, 
-                gatherings and activities tailored to your interests. Organized by people who share your interests.
-                 LIFEHUB is your space to make things happen—meet like-minded people, create your own groups, and bring your community together. 
-                 Control who sees your posts and who can join your activities. It's not about big events; 
-                 it’s about connecting in meaningful, everyday ways that enrich your life.
-            </p>
-            <img src="posts.png" alt="Posts Feature" class="rounded-image swimming-image"> <!-- Replace with actual image path -->
-        </div>
-        
-        <!-- Private Tab Feature Box -->
-        <div class="feature-box">
-            <h3>Private Tab</h3>
-            <p>
-                Unlock your potential with personalized journal prompts, designed to inspire reflection and growth.
-                Capture and cherish your most meaningful memories as you gatherthem, while curating and customizinf vision boards to manifest your dreams.
-            </p>
-            <img src="journal.png" alt="Private Tab Feature" class="rounded-image swimming-image"> <!-- Replace with actual image path -->
-        </div>
 
-        <!-- Personal Management Feature Box -->
-        <div class="feature-box">
-            <h3>Personal Management</h3>
-            <p>
-               Take control of your day with a fully customizable calendar, 
-               complete with reminders and a well structured priority list. Streamline your daily tasks,
-               enhance productivity, and improve the execution of your goals.
-            </p>
-            <img src="sched.png" alt="Personal Management Feature" class="rounded-image swimming-image"> <!-- Replace with actual image path -->
-        </div>
-        <!-- Notifications -->
-        <div class="feature-box">
-            <h3>Notifications</h3>
-            <p>
-                Stay in the loop with instant notifications! 
-                Whether it's a new connection request, an exciting event update, 
-                or a helpful calendar reminder, you'll never miss a beat on LIFEHUB.
-            </p>
-            <img src="not.png" alt="Notifications Feature" class="rounded-image swimming-image"> <!-- Replace with actual image path -->
-        </div>
-
-    </div>
+</section>
+<!-- Get Your Copy Button Section -->
+<section class="get-copy-section">
+    <a href="https://www.amazon.com/dp/B0FDL4WK1M" class="get-copy-button" target="_blank" rel="noopener noreferrer">Get Your Copy</a>
 </section>
 
-    <!-- Power Up Your Profile Section -->
-<section class="profile-section">
-    <h2>Power Up Your Profile</h2>
-    <div class="profile-box">
-        
-        <!-- Username Feature -->
-        <div class="profile-card">
-            <h3>Username</h3>
-            <p>
-                Using real names helps create a safe, more connected community. 
-                Let others know exactly who they are interacting with, building trust and authentic relationships.
-                Let us work on building an open but safe community where genuine relationships can grow.
-            </p>
-            <!--<img src="username-image.png" alt="Username Feature" class="profile-image">  Replace with actual image path -->
-        </div>
-        
-        <!-- Location Feature -->
-        <div class="profile-card">
-            <h3>Location</h3>
-            <p>
-                Completing your city location helps ensure you receive relevant content and connections in your area. 
-                While your exact address remains private, sharing your city allows you to discover local events and meetups. 
-                Adding details like your school or workplace, with the option to keep them hidden, 
-                will enhance personalized recommendations based on your interests
-            </p>
-            <!--<img src="location-image.png" alt="Location Feature" class="profile-image">  -->
-        </div>
-        
-        <!-- Exercise Control Feature -->
-        <div class="profile-card">
-            <h3>Exercise Control</h3>
-            <p>
-                As the post author, you decide who can join and participate. 
-                Customize your privacy and control over interactions to create the experience you want.
-            </p>
-            <!--<img src="exercise-control-image.png" alt="Exercise Control Feature" class="profile-image">  -->
-        </div>
 
-    </div>
-</section>
+
+
 
     <!-- Footer Section -->
-    <!-- Footer Section -->
+<!-- Footer Section -->
 <footer class="footer-section">
+
+    <!-- ✅ Wrap everything above the legal part inside this container -->
     <div class="footer-container">
-        
+
         <!-- Logo and App Store Links -->
         <div class="footer-logo">
-            <h2>LIFEHUB</h2>
-            <p><a href="#">Appstore and Google Play app links coming soon!</a></p>
-            <img src="rounded.png" alt="USA Flag" class="footer-flag"> <!-- Replace with your actual flag image path -->
-        </div>
-        
-        <!-- Contact Info -->
-        <div class="footer-contact">
-            <h3>Contact</h3>
-            <p>Cell: +1 405 934 4537</p>
-            <p>celumusasdladmini@gmail.com</p>
-            <p>Norman, OK, 73072</p>
+            <h2>TransitionHub</h2>
+            <p><a href="#">Always in Transition!</a></p>
         </div>
 
         <!-- Navigation Links -->
         <div class="footer-navigation">
             <h3>Navigation</h3>
             <ul>
-                <li><a href="index.html">Home</a></li> <!-- Link to Home -->
-                <li><a href="about.html">About</a></li> <!-- Link to About -->
-                <li><a href="guidelines.html">Guidelines</a></li> <!-- Link to Guidelines -->
-            </ul>
-        </div>
-        
-        
-        <!-- Follow Us Section -->
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <ul>
-                <li><a href="#" class ="instagram">Instagram</a></li>
-                <li><a href="#"class ="facebook">Facebook</a></li>
-                <li><a href="#" class ="linkedin">LinkedIn</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="buy.html">Buy Now</a></li>
             </ul>
         </div>
 
-    </div>
+        <!-- Follow Us Section -->
+        <div class="footer-social">
+            <h3>Connect</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/celumusa.musa_dlamini" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/celumusa-dlamini-2024/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.tiktok.com/@intransition01" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+
+    </div> <!--Close .footer-container -->
+
     
-    <!-- Bottom Legal Section -->
     <div class="footer-bottom">
         <ul>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Accessibility Statement</a></li>
         </ul>
-        <p>&copy; 2024 by LIFEHUB</p>
+        <p>&copy; 2024 by TransitionHub</p>
     </div>
+
 </footer>
+
 
 </body>
 </html>
